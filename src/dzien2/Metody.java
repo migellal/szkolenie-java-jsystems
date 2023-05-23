@@ -1,5 +1,7 @@
 package dzien2;
 
+import java.util.Scanner;
+
 public class Metody {
 
     private static int ostatniWynik;
@@ -24,6 +26,32 @@ public class Metody {
         System.out.println(dodawanie(4));
         System.out.println(dodawanie(4, 6, 3, 1, 3, 4, 6, 3, 2, 43, 2));
 
+        /*
+        1.	Napisz nową metodę, a w niej wprowadź dwie liczby całkowite, wydrukuj wszystkie wartości pomiędzy nimi
+            (pamiętaj, że użytkownik może najpierw podać większą wartość)
+         */
+        drukujWartosci();
+
+    }
+
+    private static void drukujWartosci() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę a:");
+        int a = scanner.nextInt();
+        System.out.println("Podaj liczbę b:");
+        int b = scanner.nextInt();
+        if (a > b) {
+            drukujWartoscPomiedzy(b, a);
+        } else {
+            drukujWartoscPomiedzy(a, b);
+        }
+    }
+
+    private static void drukujWartoscPomiedzy(int low, int high) {
+        low++;
+        for (; low < high; low++) {
+            System.out.print(low + ", ");
+        }
     }
 
     private static void wypiszNazweKlasy() {
