@@ -27,5 +27,10 @@ public class SystemFakturowy {
         list.add("3");
         System.out.println(list); // drukuje prawdziwą zawartosć, a nie tylko nazwę klasy i hash
 
+        Faktura faktura3 = new Faktura(1023, "Rower biegowy marki gazela", petent1, petent2);
+        Faktura faktura4 = new Faktura(345.50, "Wywóz dachówek", petent3, petent4);
+
+        System.out.println(faktura4.getNumerFaktury());
+
     }
 }

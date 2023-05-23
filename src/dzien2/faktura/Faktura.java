@@ -2,6 +2,9 @@ package dzien2.faktura;
 
 public class Faktura {
 
+    public static final double VAT = 0.23;
+    private static int numerFakturyStatic = 1;
+    private final int numerFaktury;
     private double kwota;
     private String towar;
     private Petent platnik;
@@ -12,6 +15,12 @@ public class Faktura {
         this.towar = towar;
         this.platnik = platnik;
         this.wystawca = wystawca;
+        this.numerFaktury = numerFakturyStatic;
+        numerFakturyStatic++;
+    }
+
+    public int getNumerFaktury() {
+        return numerFaktury;
     }
 
     public double getKwota() {
@@ -62,5 +71,9 @@ public class Faktura {
                 ", platnik=" + platnik +
                 ", wystawca=" + wystawca +
                 '}';
+    }
+
+    public static double calaculateBrutto(double netto) {
+        return netto + netto * VAT;
     }
 }
