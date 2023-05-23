@@ -43,6 +43,7 @@ public class Zadania {
             }
 
             System.out.println(result);
+
         }
     }
 }
