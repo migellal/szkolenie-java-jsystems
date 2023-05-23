@@ -36,6 +36,34 @@ public class ObslugaFigurGeometrycznych {
 //        System.gc(); // garbage collector - usuwanie obiektów
 //        // ta metoda tylko sugeruje użycie garbage collectora
 
+        Kwadrat kw3 = new Kwadrat();
+        Kwadrat kw4 = new Kwadrat();
+        if(kw3==kw4) {
+            System.out.println("Te same kwadraty?");
+        }
+
+        String str1 = "Ala ma kota";
+        String str2 = "Ala ma" + " kota";
+        String str3 = str2 + "";
+        if(str1==str3) {
+            System.out.println("Te same napisy?");
+        }
+        if(str1.equals(str3)) {
+            System.out.println("Takie same napisy");
+        }
+
+        if(kw3.equals(kw4)) {
+            System.out.println("Takie same kwadraty?");
+        }
+
+        System.out.println(kw3.equals(prostokat3));
+        System.out.println(kw3==kw3);
+
+        Kolo kolo2 = new Kolo(2);
+        Kolo kolo3 = new Kolo(3);
+
+        System.out.println(kolo2.hashCode());
+        System.out.println(kolo3.hashCode());
 
 
 //        int numer = 7;

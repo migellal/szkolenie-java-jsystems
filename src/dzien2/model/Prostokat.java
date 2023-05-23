@@ -24,4 +24,22 @@ public class Prostokat {
     public int obliczObwod() {
         return 2 * a + 2 * b;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Prostokat prostokat = (Prostokat) o;
+
+        if (a != prostokat.a) return false;
+        return b == prostokat.b;
+    }
+
+    @Override
+    public int hashCode() { // różny kod - na bank różne obiekty
+        int result = a; // ten sam kod, to użyj equals, żeby się upewnić, czy to na pewno to samo
+        result = 31 * result + b;
+        return result;
+    }
 }
