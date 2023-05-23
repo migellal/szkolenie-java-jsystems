@@ -44,6 +44,7 @@ public class Zadania {
 
             System.out.println(result);
 
+            // nowy komentarz dla gita
         }
     }
 }
