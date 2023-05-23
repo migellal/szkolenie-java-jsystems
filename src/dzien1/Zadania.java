@@ -1,3 +1,5 @@
+package dzien1;
+
 public class Zadania {
     public static void main(String[] args) {
         /*

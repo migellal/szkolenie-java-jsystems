@@ -1,9 +1,11 @@
+package dzien1;
+
 import java.math.BigDecimal;
 
 public class Zmienne {
 
     public static void main(String[] args) {
-        System.out.println("jakiś\n\r tek\n\tst z klasy Zmienne\n"); // \n nowa linia, \t tabulator
+        System.out.println("jakiś\n\r tek\n\tst z klasy dzien1.Zmienne\n"); // \n nowa linia, \t tabulator
         String text1 = "To jest zmienna zawierająca tekst";
         System.out.println();
         System.out.println(text1);

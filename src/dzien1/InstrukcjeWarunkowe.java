@@ -1,3 +1,5 @@
+package dzien1;
+
 import java.util.Scanner;
 
 public class InstrukcjeWarunkowe {

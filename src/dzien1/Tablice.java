@@ -1,3 +1,5 @@
+package dzien1;
+
 public class Tablice {
 
     public static void main(String[] args) { // psvm, main
