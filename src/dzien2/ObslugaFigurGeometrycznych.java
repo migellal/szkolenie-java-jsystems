@@ -65,6 +65,14 @@ public class ObslugaFigurGeometrycznych {
         System.out.println(kolo2.hashCode());
         System.out.println(kolo3.hashCode());
 
+        kolo2.equals(kolo3);
+
+        // stworz klase Faktura
+        // Klasa ta posiada 4 pola
+        // platnik, wystawca, kwota, produkt
+        // platnik oraz wystawca to obiekty klasy petent, klasa ta posiada imie, nazwisko, nazwe firmy oraz nip
+        // klasa faktura posiada metode drukuj, ktora drukuje podstawowe informacje o fakturze (nadawca, platnik, towar, kwota)
+        // utworz klase system faturowy gdzie dodasz dwie faktury, oraz wydrukujesz ich wlasciwosci
 
 //        int numer = 7;
 //        String text = "new text";
