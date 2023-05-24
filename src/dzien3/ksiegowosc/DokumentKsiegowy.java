@@ -1,6 +1,8 @@
 package dzien3.ksiegowosc;
 
-public abstract class DokumentKsiegowy {
+import dzien3.interfejsy.Drukowalna;
+
+public abstract class DokumentKsiegowy implements Drukowalna {
 
     private TypDokumentu typ;
     private double cena;
@@ -14,6 +16,7 @@ public abstract class DokumentKsiegowy {
 
     public abstract double policzonaCena();
 
+    @Override
     public final void drukuj() {
         System.out.println("Typ dokumentu: " + typ + " cena: " + cena + " policzona cena: " + policzonaCena());
     }
@@ -32,5 +35,13 @@ public abstract class DokumentKsiegowy {
 
     public void setCena(double cena) {
         this.cena = cena;
+    }
+
+    @Override
+    public String toString() {
+        return "DokumentKsiegowy{" +
+                "typ=" + typ +
+                ", cena=" + cena +
+                '}';
     }
 }
