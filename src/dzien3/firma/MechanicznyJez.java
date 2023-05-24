@@ -1,6 +1,6 @@
 package dzien3.firma;
 
-public class MechanicznyJez extends Zabawka {
+public final class MechanicznyJez extends Zabawka { // ten final nie pozwoli na dalsze dziedziczenie z tej klasy
     public MechanicznyJez(int numerProduktu, String nazwa) {
         super(numerProduktu, nazwa);
     }
