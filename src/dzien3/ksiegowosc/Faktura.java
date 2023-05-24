@@ -26,4 +26,19 @@ public class Faktura extends DokumentKsiegowy implements Comparable<Faktura> {
         return result;
         // a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
     }
+
+    @Override
+    public int hashCode() {
+        return Integer.parseInt(getCena() + "");
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Faktura) {
+            Faktura f = (Faktura) obj;
+            return getCena() == f.getCena();
+        } else {
+            return false;
+        }
+    }
 }
