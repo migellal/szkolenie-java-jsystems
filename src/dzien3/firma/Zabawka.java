@@ -1,6 +1,6 @@
 package dzien3.firma;
 
-public abstract class Zabawka extends Produkt {
+abstract class Zabawka extends Produkt {
     public Zabawka(int numerProduktu, String nazwa) {
         super(numerProduktu, nazwa);
     }
