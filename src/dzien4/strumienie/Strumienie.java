@@ -230,5 +230,15 @@ public class Strumienie {
         return Optional.ofNullable(new Faktura(23));
 //        return Optional.empty(); // new Faktura(23);
     }
+    /*
+    Napisać generator liczb losowych, wygenerować liczby lotto jeden raz (6 liczb, zakres 1 do 49),
+    a następnie powtarzać to generowanie tak długo, az drugi raz trafimy na te same liczby
+    wyświetlić ile było to losowań, jaki był koszt kuponu i czy się opłaciło
+     */
+        /*
+    Wylosować liczbę z zakresu 1 do 100, a następnie odpytywać użytkownika tak długo, aż poda właściwą liczbę,
+    po każdej odpowiedzi informować użytkownika czy wylosowana liczba jest większa, czy mniejsza.
+    Na koniec wyświetlić ile prób podjął użytkownik (użyć try-catch, żeby zabezpieczyć się przed fałszywymi odpowiedziami)
+     */
 
 }
