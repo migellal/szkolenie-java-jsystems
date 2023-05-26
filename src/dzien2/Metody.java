@@ -34,7 +34,7 @@ public class Metody {
 
     }
 
-    private static void drukujWartosci() {
+    public static void drukujWartosci() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj liczbę a:");
         int a = scanner.nextInt();
@@ -47,18 +47,18 @@ public class Metody {
         }
     }
 
-    private static void drukujWartoscPomiedzy(int low, int high) {
+    public static void drukujWartoscPomiedzy(int low, int high) {
         low++;
         for (; low < high; low++) {
             System.out.print(low + ", ");
         }
     }
 
-    private static void wypiszNazweKlasy() {
+    public static void wypiszNazweKlasy() {
         System.out.println("Metody");
     }
 
-    private static int mnozonyPrzezDwa(int liczba) {
+    public static int mnozonyPrzezDwa(int liczba) {
         int wynik;
         if (liczba == 0) {
             wynik = 0;
@@ -69,7 +69,7 @@ public class Metody {
         return wynik;
     }
 
-    private static int mnozenie(int a, int b) {
+    public static int mnozenie(int a, int b) {
         return a * b;
     }
 
