@@ -2,8 +2,11 @@ package dzien5.baza.model;
 
 import java.util.Date;
 
+// hibernate przykłady
+//@Table("employees") adnotacja oznaczająca tablicę
 public class Employee {
 
+//    @Column("employee_id") adnotacja oznaczająca kolumnę
     private long employeeId;
     private String firstName;
     private String lastName;
