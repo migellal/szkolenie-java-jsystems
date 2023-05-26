@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javafxtest.jnlp">
+    <information>
+        <title>HelloApplication</title>
+        <vendor>Unknown</vendor>
+        <description>HelloApplication</description>
+        <offline-allowed/>
+    </information>
+    <update check="background"/>
+    <resources>
+        <j2se version="11.0.19+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="gson-2.10.1.jar" size="283367" download="eager"/>
+        <jar href="javafx-base-17.0.6-win.jar" size="746022" download="eager"/>
+        <jar href="javafx-base-17.0.6.jar" size="302" download="eager"/>
+        <jar href="javafx-controls-17.0.6-win.jar" size="2548777" download="eager"/>
+        <jar href="javafx-controls-17.0.6.jar" size="306" download="eager"/>
+        <jar href="javafx-fxml-17.0.6-win.jar" size="130063" download="eager"/>
+        <jar href="javafx-fxml-17.0.6.jar" size="302" download="eager"/>
+        <jar href="javafx-graphics-17.0.6-win.jar" size="5863162" download="eager"/>
+        <jar href="javafx-graphics-17.0.6.jar" size="306" download="eager"/>
+        <jar href="javafxtest.jar" size="11019" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="600" height="400" main-class="pl.jsystems.javafxtest.HelloApplication" name="HelloApplication"/>
+</jnlp>
+
